@@ -25,3 +25,12 @@ Route::get("data",[dummyAPI::class,'getData']);
 
 // Get With Prameter Data by Id from database
 Route::get('list/{id?}',[DeviceController::class,'list']);
+
+// add Data with api
+Route::post('add',[DeviceController::class,'add']);
+
+// Update data with api / PUT Method
+Route::put('update',[DeviceController::class,'update']);
+
+// delete data with api
+Route::delete("delete/{id}",[DeviceController::class,'delete']);
